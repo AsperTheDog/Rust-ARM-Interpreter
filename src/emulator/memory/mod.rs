@@ -25,8 +25,8 @@ pub trait Memory {
 
     fn read_u16_le(&mut self, addr: u32) -> Result<u16, Fault> {
         Ok(u16::from_le_bytes([
-            self.read_u8(addr + 1)?,
-            self.read_u8(addr + 2)?
+            self.read_u8(addr)?,
+            self.read_u8(addr + 1)?
         ]))
     }
 

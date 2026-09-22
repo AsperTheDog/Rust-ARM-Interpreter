@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep:*)",
+      "Bash(find src:*)",
+      "Bash(cargo test *)"
+    ]
+  }
+}
